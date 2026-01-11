@@ -18,6 +18,28 @@ This project focuses on:
 
 This repository represents the **completed final-round submission**, not a prototype.
 
+## Problem Statement
+
+University ERP systems are core institutional infrastructure, responsible for managing attendance, examinations, results, fees, academic records, and day-to-day administrative workflows. Despite this central role, many existing ERP platforms struggle to operate reliably under real academic load.
+
+The problem is not a lack of features, but **architectural limitations**.
+
+During predictable high-traffic periods such as exam form openings, result announcements, and fee payment deadlines, traditional ERP systems frequently exhibit:
+- Severe performance degradation and request timeouts  
+- Session failures during critical form submissions  
+- System instability caused by concurrent user access  
+- Full page reloads on simple interactions, amplifying server load  
+
+These failures have direct operational consequences:
+- Students miss deadlines or submit incomplete applications  
+- Faculty and administrators are forced into manual interventions  
+- Support desks become overwhelmed during critical academic cycles  
+- Trust in institutional digital systems steadily erodes  
+
+Most legacy ERP systems were designed around monolithic architectures, tightly coupled frontend and backend logic, synchronous page rendering, and databases that do not scale gracefully under burst-heavy access patterns. As a result, they fail precisely when reliability is most critical.
+
+This project addresses the problem at its root by redesigning the ERP as a **cloud-native, full-stack system**. Instead of treating traffic spikes as exceptional events, concurrency, scalability, and resilience are treated as baseline requirements, resulting in an ERP platform that remains responsive, stable, and suitable for real institutional deployment.
+
 ---
 
 ## System Overview
